@@ -1,0 +1,22 @@
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96vw;
+    height: 10vw;
+    margin: 2vw;
+}
+
+.title-bar > div:first-child {
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+.title-bar > div:last-child {
+    font-size: 4vw;
+    margin-right: 2vw;
+}
+
+.title-bar > div:last-child > i {
+    margin-left: 4vw;
+}

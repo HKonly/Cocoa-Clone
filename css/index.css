@@ -1,0 +1,72 @@
+.welcome-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+.welcome-header__title {
+    margin-bottom: 5vw;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.welcome-header__text {
+    color: gray;
+    width: 60vw;
+    line-height: 150%
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form > * {
+    color: gray;
+    text-decoration-line: none;
+}
+
+.login-form > input {
+    height: 9vw;
+    width: 90vw;
+    border: none;
+    margin-bottom: 2vw;
+    font-size: 3vw;
+    outline: none;
+}
+
+.login-form > input[type="submit"] {
+    margin-top: 2vw;
+}
+
+.login-form > input[type="button"] {
+    margin-bottom: 5vw;
+}
+
+.login-form > input:nth-child(n):nth-last-child(n+1) {
+    border-bottom: solid 0.3vw gray;
+}
+
+.login-form > input:nth-child(n):nth-last-child(n+1):focus {
+    border-color: gold;
+}
+
+.login-form > input:nth-child(n+3):nth-last-child(n+1):hover {
+    background-color: gold;
+}
+
+.login-form > input:nth-child(n+3):nth-last-child(n+1):active {
+    background-color: goldenrod;
+}
+
+.login-form > a:hover {
+    color: gold;
+}
+
+.login-form > a:active {
+    color: goldenrod;
+}

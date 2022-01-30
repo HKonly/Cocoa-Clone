@@ -1,0 +1,33 @@
+.nav-bar {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 15vw;
+    background-color: rgb(240,240,240);
+}
+
+.nav-bar > div {
+    font-size: 5.5vw;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.nav-bar .badge {
+    position: absolute;
+    bottom: 7.5vw;
+    left: 37.5vw;
+}

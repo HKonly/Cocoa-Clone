@@ -1,0 +1,115 @@
+.notice-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96vw;
+    height: 8.5vw;
+    background-color: rgb(240,240,240);
+    margin: 2vw;
+}
+
+.notice-bar > i {
+    font-size: 3.5vw;
+    color: lightgray;
+}
+
+.notice-bar > span {
+    font-size: 3vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.list {
+    width: 96vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.list img {
+    width: 14vw;
+    height: 14vw;
+    border-radius: 30%;
+    margin-right: 2vw;
+}
+
+.list__item {
+    display: flex;
+    align-items: center;
+}
+
+.list__item.people:first-child img {
+    width: 17vw;
+    height: 17vw;
+}
+
+.list__item.people span:nth-child(2) {
+    width: 74vw;
+}
+
+.list__item.people:first-child span {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.list__item.people span:last-child {
+    color: gray;
+}
+
+.slice-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vw;
+    margin: 2vw 2vw 0 2vw;
+    border-top: solid 0.1vw gray;
+    color: gray;
+}
+
+.list__item.slice-bar > span {
+    font-size: 3vw;
+}
+
+.list__item.chat > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.list__item.chat > div:nth-child(2) {
+    align-items: flex-start;
+}
+
+.list-item.chat > div:nth-child(3) {
+    align-items: center;
+}
+
+.list__item.chat .badge {
+    width: 4vw;
+    height: 4vw;
+    font-size: 2.5vw;
+}
+
+.list__item.chat > div:nth-child(2) {
+    width: 70vw;
+}
+
+.list__item.chat > div:nth-child(2) > span:first-child {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
+.list__item.chat > div:nth-child(2) > span:last-child {
+    font-size: 3.5vw;
+    color: gray;
+}
+
+.list__item.chat > div:last-child {
+    display: flex;
+    align-items: flex-end;
+}
+
+.list__item.chat > div:last-child > span {
+    font-size: 3vw;
+    color: gray;
+    margin-bottom: 1vw;
+}
