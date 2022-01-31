@@ -26,8 +26,21 @@
     font-weight: bold;
 }
 
+.badge.small {
+    width: 1vw;
+    height: 1vw;
+}
+
 .nav-bar .badge {
     position: absolute;
+}
+
+.nav-bar .badge.second {
     bottom: 7.5vw;
     left: 37.5vw;
+}
+
+.nav-bar .badge.fourth {
+    bottom: 9vw;
+    left: 90vw;
 }

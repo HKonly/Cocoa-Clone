@@ -1,40 +1,19 @@
-.notice-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 96vw;
-    height: 8.5vw;
-    background-color: rgb(240,240,240);
-    margin: 2vw;
-}
-
-.notice-bar > i {
-    font-size: 3.5vw;
-    color: lightgray;
-}
-
-.notice-bar > span {
-    font-size: 3vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
-}
-
 .list {
     width: 96vw;
     margin-left: 2vw;
     margin-right: 2vw;
 }
 
-.list img {
+.list__item {
+    display: flex;
+    align-items: center;
+}
+
+.list__item img {
     width: 14vw;
     height: 14vw;
     border-radius: 30%;
     margin-right: 2vw;
-}
-
-.list__item {
-    display: flex;
-    align-items: center;
 }
 
 .list__item.people:first-child img {
@@ -75,11 +54,43 @@
 }
 
 .list__item.chat > div:nth-child(2) {
+    width: 70vw;
     align-items: flex-start;
 }
 
-.list-item.chat > div:nth-child(3) {
+.list__item.chat > div:nth-child(3) {
     align-items: center;
+}
+
+.list__item {
+    display: flex;
+    align-items: center;
+}
+
+.list__item.more {
+    margin-right: 2vw;
+}
+
+.list__item.more:first-child img {
+    width: 17vw;
+    height: 17vw;
+}
+
+.list__item.more > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 70vw;
+    height: 15vw;
+}
+
+.list__item.more > div:nth-child(2) i {
+    color: red;
+}
+
+.list__item.more > div:nth-child(3) i {
+    font-size: 5vw;
 }
 
 .list__item.chat .badge {
@@ -88,19 +99,16 @@
     font-size: 2.5vw;
 }
 
-.list__item.chat > div:nth-child(2) {
-    width: 70vw;
-}
-
-.list__item.chat > div:nth-child(2) > span:first-child {
+.list__item__title {
     font-size: 4vw;
     font-weight: bold;
     margin-bottom: 1vw;
 }
 
-.list__item.chat > div:nth-child(2) > span:last-child {
+.list__item__desc {
     font-size: 3.5vw;
     color: gray;
+    margin-bottom: 1vw;
 }
 
 .list__item.chat > div:last-child {
@@ -108,8 +116,81 @@
     align-items: flex-end;
 }
 
-.list__item.chat > div:last-child > span {
+.list__item__time {
     font-size: 3vw;
     color: gray;
     margin-bottom: 1vw;
+}
+
+.list__item.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96vw;
+    height: 40vw;
+    color: gray;
+}
+
+.openchat {
+    display: flex;
+    justify-content: space-between;
+    width: 96vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+    position: relative;
+}
+
+.openchat div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.openchat div:last-child {
+    margin-right: 2vw;
+}
+
+.openchat .list__item__desc {
+    font-size: 3vw;
+}
+
+.openchat div.list__item__desc {
+    display: flex;
+}
+
+.openchat div.list__item__desc img {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-left: 1vw;
+    margin-right: 0vw;
+    object-fit: cover;
+}
+
+.openchat div.list__item__desc span:last-child {
+    color: hotpink;
+}
+
+.openchat > div:last-child > img {
+    width: 16vw;
+    height: 16vw;
+    object-fit: cover;
+}
+
+.openchat > div:last-child > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9vw;
+    height: 4vw;
+    border-radius: 2vw;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 2.5vw;
+    position: relative;
+    left: 6.5vw;
+    bottom: 5.5vw;
+}
+
+.openchat > div:last-child > div * {
+    margin: 0vw;
+    color: white;
 }

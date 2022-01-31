@@ -1,0 +1,20 @@
+.notice-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96vw;
+    height: 8.5vw;
+    background-color: rgb(240,240,240);
+    margin: 2vw;
+}
+
+.notice-bar > i {
+    font-size: 3.5vw;
+    color: lightgray;
+}
+
+.notice-bar > span {
+    font-size: 3vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}

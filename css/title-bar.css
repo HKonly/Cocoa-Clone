@@ -7,7 +7,7 @@
     margin: 2vw;
 }
 
-.title-bar > div:first-child {
+.title-bar > div > span {
     font-size: 7vw;
     font-weight: bold;
 }
@@ -19,4 +19,11 @@
 
 .title-bar > div:last-child > i {
     margin-left: 4vw;
+    position: relative;
+}
+
+.title-bar > div:last-child > i:last-child > .badge {
+    position: relative;
+    left: 3.5vw;
+    bottom: 4.5vw;
 }
