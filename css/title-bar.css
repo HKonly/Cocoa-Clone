@@ -2,13 +2,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 96vw;
+    width: 94vw;
     height: 10vw;
-    margin: 2vw;
+    margin: 3vw;
 }
 
-.title-bar > div > span {
-    font-size: 7vw;
+.title-bar > div:first-child {
+    display: flex;
+    justify-content: flex-start;
+    width: 20%
+}
+
+.title-bar > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    width: 60%
+}
+
+.title-bar > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%
+}
+
+.title-bar > div:first-child i {
+    font-size: 5.5vw;
+}
+
+.title-bar > div:nth-child(2) span {
+    font-size: 6vw;
     font-weight: bold;
 }
 
@@ -17,13 +39,13 @@
     margin-right: 2vw;
 }
 
-.title-bar > div:last-child > i {
+.title-bar > div:last-child i {
     margin-left: 4vw;
     position: relative;
 }
 
-.title-bar > div:last-child > i:last-child > .badge {
-    position: relative;
+.title-bar > div:last-child i:last-child > .badge {
+    position: absolute;
     left: 3.5vw;
-    bottom: 4.5vw;
+    bottom: 3.5vw;
 }

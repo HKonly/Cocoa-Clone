@@ -1,0 +1,58 @@
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.chatbox__recv {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 3vw;
+    margin-bottom: 8vw;
+}
+
+.chatbox__recv > img {
+    width: 9vw;
+    height: 9vw;
+    object-fit: cover;
+    margin-right: 2vw;
+    border-radius: 40%
+}
+
+.chatter {
+    display: flex;
+    font-size: 3vw;
+    color: rgb(100,100,100);
+    margin-bottom: 2vw;
+}
+
+.chat-bubble {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chat-bubble__inbubble {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 1.5vw 2vw;
+    border-radius: 3vw;
+    line-height: 120%
+}
+
+.chat-bubble__time {
+    font-size: 2.5vw;
+    color: rgb(100,100,100);
+    margin-right: 2vw;
+}
+
+.chatbox__send {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 3vw;
+    margin-bottom: 8vw;
+}
+
+.chatbox__send .chat-bubble__inbubble {
+    background-color: gold;
+}

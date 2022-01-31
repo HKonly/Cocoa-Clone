@@ -194,3 +194,37 @@
     margin: 0vw;
     color: white;
 }
+
+.settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6vw;
+    margin-bottom: 7.5vw;
+}
+
+.settings > div:first-child {
+    font-size: 5vw;
+    margin-left: 4vw;
+}
+
+.settings > div:last-child {
+    margin-right: 3vw;
+}
+
+.settings > div:first-child > span {
+    font-weight: normal;
+}
+
+.settings.second {
+    margin-top: 0vw;
+}
+
+.sep-bar {
+    width: 94vw;
+    height: 1vw;
+    margin: 0vw;
+    margin-top: -5vw;
+    margin-bottom: -1vw;
+    border-bottom: solid 0.3vw lightgray;
+}
